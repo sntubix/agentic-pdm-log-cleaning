@@ -56,20 +56,21 @@ uv pip install -e .
 Option B installs the package in editable mode so local code changes are immediately available without reinstalling.
 ### 4) Configure your environment
 
-Create a `.env` file in the project root with your API key and Python path:
+Create a `.env` file in the project root with your API key:
 
 ```bash
 cat > .env << 'EOF'
-export OPENROUTER_API_KEY="your-openrouter-key-here"
-export PYTHONPATH=$PYTHONPATH:$(pwd)
+OPENROUTER_API_KEY="your-openrouter-key-here"
 EOF
 ```
 
-Then source it:
+If you run scripts directly from the shell, you can still source it:
 
 ```bash
 source .env
 ```
+
+The Python code already loads `.env` at runtime, and editable install (`uv pip install -e .`) makes imports work without setting `PYTHONPATH`.
 
 **Required:** Get your OpenRouter API key from [openrouter.ai](https://openrouter.ai).
 
@@ -86,6 +87,22 @@ Flags (all optional, defaults shown above):
 - `--skip_benchmark_execution`: only generate data, skip LLM runs.
 
 Outputs are written under `data/` and `logs/` (see `config/app_config.yaml`).
+
+### Development checks
+
+Install development dependencies:
+
+```bash
+uv pip install -e ".[dev]"
+```
+
+Run standard checks:
+
+```bash
+ruff check .
+mypy agentic_pdm_data_cleaning
+pytest
+```
 
 ---
 

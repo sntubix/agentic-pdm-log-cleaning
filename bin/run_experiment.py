@@ -3,6 +3,11 @@ import os
 import sys
 import traceback
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC_PATH = os.path.join(PROJECT_ROOT, "src")
+if SRC_PATH not in sys.path:
+    sys.path.insert(0, SRC_PATH)
+
 from agentic_pdm_data_cleaning.evaluation.evaluator import Evaluator
 from agentic_pdm_data_cleaning.experiment.benchmark_executor import \
     BenchmarkExecutor
