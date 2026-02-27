@@ -81,8 +81,8 @@ cp .env.example .env
 Then edit `.env`:
 
 ```bash
-cat > .env << 'EOF'
-PYTHONPATH=$PYTHONPATH:$(pwd)
+cat > .env <<EOF
+PYTHONPATH="${PYTHONPATH:+$PYTHONPATH:}$(pwd)"
 OPENROUTER_API_KEY="your-openrouter-key-here"
 EOF
 ```
