@@ -1,0 +1,176 @@
+Metadata-Version: 2.4
+Name: agentic-predictive-maintenance-cleaning
+Version: 0.1.0
+Summary: A project for agentic predictive maintenance data cleaning
+Author-email: Valeriu Dimidov <valeriu@example.com>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: duckdb>=1.3.2
+Requires-Dist: duckdb-engine>=0.17.0
+Requires-Dist: faker>=37.4.0
+Requires-Dist: logfire>=4.7.0
+Requires-Dist: numpy>=2.2.5
+Requires-Dist: openai>=1.107.3
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pydantic>=2.11.4
+Requires-Dist: pydantic-ai[logfire]>=0.3.1
+Requires-Dist: python-dateutil>=2.9.0.post0
+Requires-Dist: python-dotenv>=1.1.1
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: scikit-learn>=1.7.2
+Requires-Dist: sqlalchemy>=2.0.41
+Dynamic: license-file
+
+# AgenticPdmDataCleaner
+
+_Agentic, LLM‑powered cleaning of automotive maintenance logs — with synthetic data, controlled noise injection, and repeatable benchmarks._
+
+This repository provides a sandbox environment for AI agents focused on predictive maintenance. It supports generating synthetic automotive maintenance logs, injecting configurable noise, and benchmarking LLM agents that clean, repair, or reject log records using structured actions. The log schema is intentionally simplified for experimentation and reproducibility.
+
+> TL;DR: Generate a synthetic fleet, corrupt the maintenance log with configurable noise (M1–M6), and evaluate multiple LLMs (OpenRouter / OpenAI) in a **stream-style, one‑record‑at‑a‑time** pipeline.
+
+---
+
+## Highlights
+
+- **Synthetic Fleet Generator** → Fleet registry, odometer signals, service catalog, and maintenance logs.
+- **Noise Taxonomy (M0–M6)** → Typos, missing values, out‑of‑fleet vehicles, wrong end dates, and more.
+- **Agentic Benchmark** → LLMs choose one of: `accept(wo_num)`, `reject(wo_num)`, or `update(wo_num, field, value)`.
+- **Config‑driven** → Swap models, fleets, and experiment knobs via YAML.
+- **Reproducible** → Deterministic seeds & structured outputs ready for analysis.
+
+Key folders:
+- `agentic_pdm_data_cleaning/` – source code (agents, generators, evaluation, utilities).
+- `bin/` – entry scripts (e.g., `run_experiment.py`).
+- `config/` – app, model, fleet, benchmark, and hyper‑parameters YAMLs.
+- `resources/` – static assets (e.g., service catalog).
+
+---
+
+## Quickstart (5 minutes)
+### 0) Install uv in your environment
+
+```bash
+pip install uv
+```
+
+### 1) Create a Python 3.12 virtual environment (recommended with `uv`)
+
+```bash
+uv venv --python 3.12 &&\
+source .venv/bin/activate   &&\
+uv pip install --upgrade pip
+```
+
+
+### 2) Ensure the Python path is set correctly
+
+Configure PYTHONPATH in .env file so that PYTHONPATH=$PYTHONPATH:$(pwd)
+
+### 3) Install dependencies
+
+```bash
+uv pip install -r requirements.txt
+```
+
+> If you hit a missing import later, just `pip install <that-package>` — the codebase is modular and you can add dependencies incrementally.
+
+### 4) Set API keys (for model providers)
+The benchmark configs use OpenRouter/OpenAI identifiers. Set one of:
+```bash
+export OPENROUTER_API_KEY="sk-..."
+# or
+export OPENAI_API_KEY="sk-..."
+```
+> Models are configured in `config/models/*.yaml`. Edit `full_model_identifier` or provider if you’re using local models or different endpoints.
+
+### 5) Run the benchmark
+```bash
+python bin/run_experiment.py   --benchmark_config_path config/benchmarks/benchmark_ubix.yaml
+```
+
+Flags (all optional, defaults shown above):
+- `--benchmark_config_path`: which suite to run (see `config/benchmarks/`).
+- `--skip_data_generation`: reuse previously generated synthetic data.
+- `--skip_benchmark_execution`: only generate data, skip LLM runs.
+
+Outputs are written under `data/` and `logs/` (see `config/app_config.yaml`).
+
+---
+
+## Configuration Guide
+
+- **App settings**: `config/app_config.yaml` (paths, logging).
+- **Models**: `config/models/*.yaml` — provider (`open_router`), price metadata, and IDs like `openai/gpt-oss-20b`, `openai/gpt-5`.
+- **Fleet**: `config/fleets/fleet_ubix.yaml` — country, monitoring window, fleet size.
+- **Hyper‑parameters**: `config/hyperparameters_space/space_1.yaml` — decoding knobs such as `temperature`, `top_p`.
+- **Benchmarks**: `config/benchmarks/*.yaml` — which experiments to run, how many records, and which models.
+
+### Noise Categories (M0–M6)
+- **M0**: clean
+- **M1**: vehicle identifier misalignment
+- **M2**: out‑of‑fleet vehicles
+- **M3**: invalid categorical values (typos, swaps)
+- **M4**: missing values
+- **M5**: digital system test entries
+- **M6**: wrong end dates (temporal inconsistency)
+
+---
+
+## How It Works (One‑Record Stream Processing)
+
+For each maintenance record:
+1. The agent optionally queries read‑only tools over **Fleet Registry**, **Odometer Signals**, and **Service Catalog**.
+2. It must choose **exactly one** action:
+   - `accept(wo_num)` — record is valid;
+   - `reject(wo_num)` — irreparable or out‑of‑scope;
+   - `update(wo_num, field, value)` — single‑field repair.
+3. Results are saved in structured form for evaluation.
+
+This mirrors how an online PdM pipeline would curate logs as they arrive.
+
+---
+
+## Reproducing the Paper’s Experiments
+
+- Use the provided benchmark files in `config/benchmarks/`.
+- Models are declared in each benchmark YAML under `models: [...]`.
+- The code logs token usage, latency, and cost estimates (from model config files).
+- After runs complete, evaluation scripts parse outputs and compute **EDR/ECR** per noise type.
+
+> Tip: Start with a single small model (e.g., `nemotron-nano-9b-v2`) and `num_records: 10` to smoke‑test the pipeline, then scale up.
+
+---
+
+## FAQ
+
+**Q: Do I need real data?**  
+No. The framework generates **synthetic, privacy‑safe** data across four tables and then injects configurable noise into maintenance logs.
+
+**Q: Can I plug in my own LLM?**  
+Yes — add a YAML under `config/models/` with your provider and identifier, then include it in a benchmark file.
+
+**Example:**
+```yaml
+model_name: "llama3.1:latest"
+organization: "meta"
+full_model_identifier: "meta/llama3.1:latest"
+llm_config:
+  provider: "open_ai"
+  base_url: "http://private-server:11434/v1"
+  cost_in: 0.01
+  cost_out: 0.01
+  cost_unit: 1_000_000
+```
+
+
+**Q: Where are results stored?**  
+See `config/app_config.yaml`: artifacts go under `data/` and logs under `logs/` by default.
+
+---
+
+## License
+
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for details.

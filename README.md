@@ -25,38 +25,59 @@ Key folders:
 ---
 
 ## Quickstart (5 minutes)
+### 0) Install uv in your environment
+
+```bash
+pip install uv
+```
 
 ### 1) Create a Python 3.12 virtual environment (recommended with `uv`)
 
 ```bash
-uv venv --python 3.12
-source .venv/bin/activate  
+uv venv --python 3.12 &&\
+source .venv/bin/activate   &&\
 uv pip install --upgrade pip
 ```
 
-> If you don't have `uv` installed, use `pip install uv` or fall back to the standard Python venv commands.
+### 3) Install dependencies
 
-### 2) Ensure the Python path is set correctly
+Choose one of the following:
+
+**Option A (runtime dependencies only):**
+```bash
+uv pip install -r requirements.txt
+```
+
+**Option B (recommended for development):**
+```bash
+uv pip install -e .
+```
+
+Option B installs the package in editable mode so local code changes are immediately available without reinstalling.
+### 4) Configure your env variables
+
+Set your OpenRouter API key as an environment variable:
+
+```bash
+export OPENROUTER_API_KEY="your-openrouter-key-here"
+```
+
+Update `PYTHONPATH`
 
 ```bash
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 ```
 
-### 3) Install dependencies
+Or save both to a `.env` file and source it:
 
 ```bash
-uv pip install -r requirements.txt
+source .env
 ```
 
-> If you hit a missing import later, just `pip install <that-package>` — the codebase is modular and you can add dependencies incrementally.
 
-### 4) Set API keys (for model providers)
-The benchmark configs use OpenRouter/OpenAI identifiers. Set one of:
-```bash
-export OPENROUTER_API_KEY="sk-..."
-# or
-export OPENAI_API_KEY="sk-..."
-```
+**Required:** Get your OpenRouter API key from [openrouter.ai](https://openrouter.ai).
+
+
 > Models are configured in `config/models/*.yaml`. Edit `full_model_identifier` or provider if you’re using local models or different endpoints.
 
 ### 5) Run the benchmark

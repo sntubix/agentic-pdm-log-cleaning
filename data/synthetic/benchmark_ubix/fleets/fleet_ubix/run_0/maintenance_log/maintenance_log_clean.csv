@@ -1,0 +1,151 @@
+id,work_order_number,start_date,end_date,license_plate,system,subsystem,component,activity,work_description,work_order_type,corrupted_record,noise_label,noise_type,label
+0,WO860197,2022-05-30,2022-06-04,YN4228,HVAC,Cooling,Radiator,Repair,Repair performed on radiator (corrective).,corrective,0,none,none,accept
+1,WO512416,2021-01-03,2021-01-10,MX7246,Fuel System,Storage,Fuel Tank,Repair,Repair performed on fuel tank (corrective).,corrective,0,none,none,accept
+2,WO361063,2021-07-27,2021-08-03,NL6419,HVAC,Cooling,Radiator,Diagnose,Diagnose performed on radiator (corrective).,corrective,0,none,none,accept
+3,WO220176,2022-12-18,2022-12-25,IW5526,Suspension,Rear Suspension,Air Spring,Repair,Repair performed on air spring (corrective).,corrective,0,none,none,accept
+4,WO129223,2021-05-18,2021-05-25,VO8451,Exhaust,Silencing,Muffler,Repair,Repair performed on muffler (corrective).,corrective,0,none,none,accept
+5,WO947254,2021-06-25,2021-06-30,EJ5374,Fuel System,Storage,Fuel Tank,Diagnose,Diagnose performed on fuel tank (corrective).,corrective,0,none,none,accept
+6,WO648025,2022-05-01,2022-05-08,IG2496,HVAC,Cooling,Coolant Pump,Diagnose,Diagnose performed on coolant pump (corrective).,corrective,0,none,none,accept
+7,WO211498,2022-11-13,2022-11-17,BR4978,Fuel System,Control and Monitoring,Flowmeter,Repair,Repair performed on flowmeter (corrective).,corrective,0,none,none,accept
+8,WO675674,2022-04-28,2022-05-04,VP6280,Suspension,Rear Suspension,Air Spring,Replace,Replace performed on air spring (corrective).,corrective,0,none,none,accept
+9,WO995531,2022-10-11,2022-10-18,WZ5573,Brake System,Air Brake,Brake Chamber,Repair,Repair performed on brake chamber (corrective).,corrective,0,none,none,accept
+10,WO490398,2022-03-23,2022-03-27,LD3522,HVAC,Cooling,Coolant Pump,Replace,Replace performed on coolant pump (corrective).,corrective,0,none,none,accept
+11,WO441172,2022-02-14,2022-02-19,HJ3385,Steering,Rack and Pinion,Steering Rack,Repair,Repair performed on steering rack (corrective).,corrective,0,none,none,accept
+12,WO491235,2021-02-28,2021-03-06,CZ3925,Powertrain,Driveline,Differential,Diagnose,Diagnose performed on differential (corrective).,corrective,0,none,none,accept
+13,WO259468,2022-01-25,2022-01-31,KI2713,Brake System,Hydraulic Brake,Brake Disc,Diagnose,Diagnose performed on brake disc (corrective).,corrective,0,none,none,accept
+14,WO269274,2022-01-31,2022-02-05,ZC7596,Electrical System,Starting System,Starter Motor,Diagnose,Diagnose performed on starter motor (corrective).,corrective,0,none,none,accept
+15,WO535094,2021-12-17,2021-12-24,FD9779,HVAC,Air Conditioning,Compressor,Repair,Repair performed on compressor (corrective).,corrective,0,none,none,accept
+16,WO480773,2022-07-03,2022-07-07,QX8994,Powertrain,Transmission,Clutch,Diagnose,Diagnose performed on clutch (corrective).,corrective,0,none,none,accept
+17,WO395181,2022-10-17,2022-10-22,PU8527,Body,Windows,Window Motor,Replace,Replace performed on window motor (corrective).,corrective,0,none,none,accept
+18,WO816523,2022-09-26,2022-10-03,YO1651,Suspension,Rear Suspension,Leaf Spring,Repair,Repair performed on leaf spring (corrective).,corrective,0,none,none,accept
+19,WO166187,2022-12-23,2022-12-28,BN9167,Electrical System,Charging System,Alternator,Repair,Repair performed on alternator (corrective).,corrective,0,none,none,accept
+20,WO345805,2021-05-11,2021-05-18,SD9042,Electrical System,Charging System,Alternator,Repair,Repair performed on alternator (corrective).,corrective,0,none,none,accept
+21,WO290350,2022-01-04,2022-01-10,QX3973,HVAC,Air Conditioning,Compressor,Diagnose,Diagnose performed on compressor (corrective).,corrective,0,none,none,accept
+22,WO579573,2022-01-17,2022-01-22,MC1653,Suspension,Front Suspension,Shock Absorber,Repair,Repair performed on shock absorber (corrective).,corrective,0,none,none,accept
+23,WO836565,2022-04-22,2022-04-27,CT9935,HVAC,Air Conditioning,Compressor,Replace,Replace performed on compressor (corrective).,corrective,0,none,none,accept
+24,WO482443,2021-11-24,2021-11-30,BE6039,Brake System,Air Brake,Brake Chamber,Repair,Repair performed on brake chamber (corrective).,corrective,0,none,none,accept
+25,WO956201,2021-11-08,2021-11-15,EM4502,Powertrain,Engine,Cylinder Head,Repair,Repair performed on cylinder head (corrective).,corrective,0,none,none,accept
+26,WO177842,2022-06-08,2022-06-15,CW8711,Fuel System,Control and Monitoring,Flowmeter,Repair,Repair performed on flowmeter (corrective).,corrective,0,none,none,accept
+27,WO242412,2021-07-17,2021-07-22,OT8019,Powertrain,Transmission,Clutch,Replace,Replace performed on clutch (corrective).,corrective,0,none,none,accept
+28,WO100232,2022-03-29,2022-04-04,DM1823,Fuel System,Delivery,Fuel Pump,Replace,Replace performed on fuel pump (corrective).,corrective,0,none,none,accept
+29,WO299720,2022-12-18,2022-12-23,IS5722,HVAC,Heating,Heater Core,Replace,Replace performed on heater core (corrective).,corrective,0,none,none,accept
+30,WO698513,2021-08-28,2021-09-03,NE4954,Brake System,Hydraulic Brake,Brake Disc,Replace,Replace performed on brake disc (corrective).,corrective,0,none,none,accept
+31,WO698957,2022-03-02,2022-03-08,WK3532,Electrical System,Charging System,Alternator,Diagnose,Diagnose performed on alternator (corrective).,corrective,0,none,none,accept
+32,WO701775,2021-06-16,2021-06-20,MU2524,Steering,Rack and Pinion,Steering Rack,Replace,Replace performed on steering rack (corrective).,corrective,0,none,none,accept
+33,WO719427,2021-07-05,2021-07-12,VX8195,Steering,Rack and Pinion,Steering Rack,Diagnose,Diagnose performed on steering rack (corrective).,corrective,0,none,none,accept
+34,WO225260,2022-08-15,2022-08-20,WI9179,HVAC,Cooling,Coolant Pump,Repair,Repair performed on coolant pump (corrective).,corrective,0,none,none,accept
+35,WO972664,2022-05-29,2022-06-05,QW4150,Electrical System,Starting System,Starter Motor,Diagnose,Diagnose performed on starter motor (corrective).,corrective,0,none,none,accept
+36,WO861258,2022-02-07,2022-02-12,OX2988,Fuel System,Delivery,Fuel Pump,Replace,Replace performed on fuel pump (corrective).,corrective,0,none,none,accept
+37,WO953114,2021-08-22,2021-08-28,VH2697,Suspension,Front Suspension,Shock Absorber,Repair,Repair performed on shock absorber (corrective).,corrective,0,none,none,accept
+38,WO803311,2022-10-23,2022-10-30,AP6663,Suspension,Rear Suspension,Leaf Spring,Diagnose,Diagnose performed on leaf spring (corrective).,corrective,0,none,none,accept
+39,WO899114,2021-11-06,2021-11-10,YF1333,Body,Doors,Hinges,Repair,Repair performed on hinges (corrective).,corrective,0,none,none,accept
+40,WO593254,2022-08-10,2022-08-15,FG6718,HVAC,Cooling,Coolant Pump,Diagnose,Diagnose performed on coolant pump (corrective).,corrective,0,none,none,accept
+41,WO941727,2022-03-23,2022-03-30,UG7512,Steering,Power Steering,Pump,Repair,Repair performed on pump (corrective).,corrective,0,none,none,accept
+42,WO506273,2022-02-17,2022-02-21,BB4853,HVAC,Heating,Heater Core,Diagnose,Diagnose performed on heater core (corrective).,corrective,0,none,none,accept
+43,WO570008,2021-10-30,2021-11-05,MG7043,Body,Windows,Window Motor,Repair,Repair performed on window motor (corrective).,corrective,0,none,none,accept
+44,WO339704,2021-02-13,2021-02-20,NH1893,HVAC,Air Conditioning,Compressor,Replace,Replace performed on compressor (corrective).,corrective,0,none,none,accept
+45,WO150703,2021-03-06,2021-03-10,ZC1420,Brake System,Air Brake,Air Compressor,Diagnose,Diagnose performed on air compressor (corrective).,corrective,0,none,none,accept
+46,WO498778,2022-10-09,2022-10-14,UE2588,Powertrain,Transmission,Gearbox,Diagnose,Diagnose performed on gearbox (corrective).,corrective,0,none,none,accept
+47,WO887159,2021-07-07,2021-07-14,GR1090,Steering,Rack and Pinion,Steering Rack,Diagnose,Diagnose performed on steering rack (corrective).,corrective,0,none,none,accept
+48,WO584277,2021-04-11,2021-04-17,XQ5930,Fuel System,Storage,Fuel Tank,Repair,Repair performed on fuel tank (corrective).,corrective,0,none,none,accept
+49,WO923629,2021-09-28,2021-10-04,KP9565,Brake System,Air Brake,Air Compressor,Replace,Replace performed on air compressor (corrective).,corrective,0,none,none,accept
+50,WO172933,2021-07-27,2021-08-01,LY5315,Brake System,Air Brake,Brake Chamber,Replace,Replace performed on brake chamber (corrective).,corrective,0,none,none,accept
+51,WO841308,2022-12-14,2022-12-19,PI8238,Suspension,Front Suspension,Shock Absorber,Diagnose,Diagnose performed on shock absorber (corrective).,corrective,0,none,none,accept
+52,WO215013,2021-10-31,2021-11-05,NF7126,Powertrain,Transmission,Clutch,Repair,Repair performed on clutch (corrective).,corrective,0,none,none,accept
+53,WO575567,2021-08-20,2021-08-25,OQ5352,Powertrain,Transmission,Gearbox,Repair,Repair performed on gearbox (corrective).,corrective,0,none,none,accept
+54,WO529880,2021-05-22,2021-05-28,PR3434,Steering,Rack and Pinion,Steering Rack,Repair,Repair performed on steering rack (corrective).,corrective,0,none,none,accept
+55,WO760281,2021-08-14,2021-08-20,PO9928,HVAC,Heating,Heater Core,Repair,Repair performed on heater core (corrective).,corrective,0,none,none,accept
+56,WO825908,2022-09-08,2022-09-13,PS9270,HVAC,Air Conditioning,Compressor,Diagnose,Diagnose performed on compressor (corrective).,corrective,0,none,none,accept
+57,WO990756,2022-01-01,2022-01-06,HZ9883,Fuel System,Delivery,Fuel Pump,Replace,Replace performed on fuel pump (corrective).,corrective,0,none,none,accept
+58,WO882271,2022-02-06,2022-02-12,YW4912,HVAC,Cooling,Radiator,Diagnose,Diagnose performed on radiator (corrective).,corrective,0,none,none,accept
+59,WO171376,2021-05-19,2021-05-24,FS4910,Powertrain,Transmission,Clutch,Replace,Replace performed on clutch (corrective).,corrective,0,none,none,accept
+60,WO840196,2021-02-01,2021-02-07,VC6934,Steering,Power Steering,Pump,Replace,Replace performed on pump (corrective).,corrective,0,none,none,accept
+61,WO266149,2022-04-09,2022-04-14,VO1339,HVAC,Cooling,Radiator,Repair,Repair performed on radiator (corrective).,corrective,0,none,none,accept
+62,WO734346,2022-09-28,2022-10-03,JX8397,Body,Windows,Window Motor,Diagnose,Diagnose performed on window motor (corrective).,corrective,0,none,none,accept
+63,WO692685,2021-07-31,2021-08-06,SI3547,Suspension,Rear Suspension,Air Spring,Repair,Repair performed on air spring (corrective).,corrective,0,none,none,accept
+64,WO787759,2022-07-26,2022-07-31,RY7498,Brake System,Hydraulic Brake,Brake Disc,Replace,Replace performed on brake disc (corrective).,corrective,0,none,none,accept
+65,WO813453,2022-02-01,2022-02-05,AH4657,Powertrain,Driveline,Driveshaft,Diagnose,Diagnose performed on driveshaft (corrective).,corrective,0,none,none,accept
+66,WO243495,2021-11-19,2021-11-23,WN5114,HVAC,Cooling,Radiator,Repair,Repair performed on radiator (corrective).,corrective,0,none,none,accept
+67,WO573443,2022-05-10,2022-05-15,JX5871,Brake System,Air Brake,Brake Chamber,Diagnose,Diagnose performed on brake chamber (corrective).,corrective,0,none,none,accept
+68,WO568199,2021-03-03,2021-03-08,TV5543,Powertrain,Transmission,Gearbox,Diagnose,Diagnose performed on gearbox (corrective).,corrective,0,none,none,accept
+69,WO498931,2022-03-07,2022-03-11,KG7046,Exhaust,Silencing,Muffler,Repair,Repair performed on muffler (corrective).,corrective,0,none,none,accept
+70,WO431221,2021-10-06,2021-10-12,LH1106,HVAC,Cooling,Coolant Pump,Replace,Replace performed on coolant pump (corrective).,corrective,0,none,none,accept
+71,WO820319,2021-10-06,2021-10-13,XO7291,Body,Doors,Hinges,Repair,Repair performed on hinges (corrective).,corrective,0,none,none,accept
+72,WO619084,2022-12-05,2022-12-11,ZV2528,Powertrain,Transmission,Gearbox,Repair,Repair performed on gearbox (corrective).,corrective,0,none,none,accept
+73,WO619027,2022-06-03,2022-06-07,HR6491,HVAC,Heating,Heater Core,Repair,Repair performed on heater core (corrective).,corrective,0,none,none,accept
+74,WO200728,2022-10-07,2022-10-11,RC9797,Powertrain,Engine,Turbocharger,Replace,Replace performed on turbocharger (corrective).,corrective,0,none,none,accept
+75,WO603391,2021-05-13,2021-05-20,ID5291,Powertrain,Driveline,Differential,Repair,Repair performed on differential (corrective).,corrective,0,none,none,accept
+76,WO779604,2021-07-22,2021-07-26,MI9903,Fuel System,Storage,Fuel Tank,Replace,Replace performed on fuel tank (corrective).,corrective,0,none,none,accept
+77,WO344560,2021-09-09,2021-09-15,DZ6439,Suspension,Rear Suspension,Air Spring,Repair,Repair performed on air spring (corrective).,corrective,0,none,none,accept
+78,WO271771,2021-06-18,2021-06-23,DQ8491,Powertrain,Driveline,Differential,Repair,Repair performed on differential (corrective).,corrective,0,none,none,accept
+79,WO517494,2021-11-21,2021-11-25,MB9727,Fuel System,Control and Monitoring,Flowmeter,Repair,Repair performed on flowmeter (corrective).,corrective,0,none,none,accept
+80,WO498174,2021-08-29,2021-09-05,GG2290,HVAC,Cooling,Coolant Pump,Diagnose,Diagnose performed on coolant pump (corrective).,corrective,0,none,none,accept
+81,WO400553,2021-01-07,2021-01-11,VL6000,Fuel System,Delivery,Fuel Pump,Replace,Replace performed on fuel pump (corrective).,corrective,0,none,none,accept
+82,WO423143,2022-03-16,2022-03-20,LS2989,Brake System,Air Brake,Brake Chamber,Repair,Repair performed on brake chamber (corrective).,corrective,0,none,none,accept
+83,WO373985,2022-12-01,2022-12-05,QU1659,HVAC,Heating,Heater Core,Diagnose,Diagnose performed on heater core (corrective).,corrective,0,none,none,accept
+84,WO192115,2021-11-12,2021-11-16,FR7528,HVAC,Air Conditioning,Compressor,Replace,Replace performed on compressor (corrective).,corrective,0,none,none,accept
+85,WO119598,2022-10-30,2022-11-05,TF9998,HVAC,Cooling,Coolant Pump,Repair,Repair performed on coolant pump (corrective).,corrective,0,none,none,accept
+86,WO841103,2022-09-16,2022-09-20,WB2604,Fuel System,Control and Monitoring,Flowmeter,Replace,Replace performed on flowmeter (corrective).,corrective,0,none,none,accept
+87,WO359485,2021-04-23,2021-04-27,EF8933,Fuel System,Control and Monitoring,Flowmeter,Diagnose,Diagnose performed on flowmeter (corrective).,corrective,0,none,none,accept
+88,WO270454,2022-02-06,2022-02-13,RS7537,Brake System,Air Brake,Brake Chamber,Replace,Replace performed on brake chamber (corrective).,corrective,0,none,none,accept
+89,WO530074,2022-03-18,2022-03-25,MT1853,Suspension,Front Suspension,Shock Absorber,Replace,Replace performed on shock absorber (corrective).,corrective,0,none,none,accept
+90,WO346639,2021-08-11,2021-08-18,OR6511,Suspension,Front Suspension,Shock Absorber,Diagnose,Diagnose performed on shock absorber (corrective).,corrective,0,none,none,accept
+91,WO411889,2022-01-18,2022-01-22,AK4681,HVAC,Cooling,Radiator,Replace,Replace performed on radiator (corrective).,corrective,0,none,none,accept
+92,WO612807,2022-02-02,2022-02-07,VO3870,Fuel System,Delivery,Fuel Pump,Diagnose,Diagnose performed on fuel pump (corrective).,corrective,0,none,none,accept
+93,WO210121,2021-07-20,2021-07-26,HM9834,Steering,Power Steering,Pump,Diagnose,Diagnose performed on pump (corrective).,corrective,0,none,none,accept
+94,WO352942,2021-08-21,2021-08-27,LH4777,Body,Windows,Window Motor,Repair,Repair performed on window motor (corrective).,corrective,0,none,none,accept
+95,WO413948,2021-06-26,2021-06-30,HM7371,Electrical System,Charging System,Alternator,Repair,Repair performed on alternator (corrective).,corrective,0,none,none,accept
+96,WO546299,2022-09-14,2022-09-21,UC4139,Exhaust,Silencing,Muffler,Repair,Repair performed on muffler (corrective).,corrective,0,none,none,accept
+97,WO238526,2021-10-16,2021-10-21,EB8144,Suspension,Rear Suspension,Air Spring,Diagnose,Diagnose performed on air spring (corrective).,corrective,0,none,none,accept
+98,WO812553,2022-04-29,2022-05-04,BZ2193,Suspension,Rear Suspension,Leaf Spring,Repair,Repair performed on leaf spring (corrective).,corrective,0,none,none,accept
+99,WO447092,2022-11-25,2022-12-01,LK5563,Brake System,Air Brake,Brake Chamber,Replace,Replace performed on brake chamber (corrective).,corrective,0,none,none,accept
+100,WO842574,2021-08-03,2021-08-10,BR6409,Electrical System,Charging System,Alternator,Replace,Replace performed on alternator (corrective).,corrective,0,none,none,accept
+101,WO146883,2022-09-06,2022-09-10,YH7389,Powertrain,Driveline,Driveshaft,Replace,Replace performed on driveshaft (corrective).,corrective,0,none,none,accept
+102,WO843971,2022-10-20,2022-10-25,PS4335,HVAC,Cooling,Radiator,Diagnose,Diagnose performed on radiator (corrective).,corrective,0,none,none,accept
+103,WO948870,2022-05-13,2022-05-19,DG3503,Body,Doors,Hinges,Repair,Repair performed on hinges (corrective).,corrective,0,none,none,accept
+104,WO383292,2022-11-18,2022-11-25,GM2874,Fuel System,Control and Monitoring,Flowmeter,Repair,Repair performed on flowmeter (corrective).,corrective,0,none,none,accept
+105,WO357221,2022-01-18,2022-01-22,FM3780,Suspension,Front Suspension,Shock Absorber,Repair,Repair performed on shock absorber (corrective).,corrective,0,none,none,accept
+106,WO114308,2021-08-09,2021-08-16,CG2229,Powertrain,Driveline,Driveshaft,Replace,Replace performed on driveshaft (corrective).,corrective,0,none,none,accept
+107,WO361911,2022-04-11,2022-04-17,OM8216,HVAC,Air Conditioning,Compressor,Diagnose,Diagnose performed on compressor (corrective).,corrective,0,none,none,accept
+108,WO459880,2022-10-11,2022-10-18,IA6947,Brake System,Air Brake,Air Compressor,Repair,Repair performed on air compressor (corrective).,corrective,0,none,none,accept
+109,WO176470,2022-08-31,2022-09-04,GD7622,HVAC,Cooling,Coolant Pump,Repair,Repair performed on coolant pump (corrective).,corrective,0,none,none,accept
+110,WO804070,2021-08-02,2021-08-08,LZ2894,Exhaust,Emission Control,Catalytic Converter,Replace,Replace performed on catalytic converter (corrective).,corrective,0,none,none,accept
+111,WO210951,2021-05-06,2021-05-13,VH4443,HVAC,Cooling,Coolant Pump,Diagnose,Diagnose performed on coolant pump (corrective).,corrective,0,none,none,accept
+112,WO847687,2022-11-20,2022-11-24,SK3529,Powertrain,Driveline,Driveshaft,Diagnose,Diagnose performed on driveshaft (corrective).,corrective,0,none,none,accept
+113,WO455576,2021-11-30,2021-12-06,QP3803,HVAC,Cooling,Radiator,Replace,Replace performed on radiator (corrective).,corrective,0,none,none,accept
+114,WO696616,2021-09-27,2021-10-02,GU1715,Body,Windows,Window Motor,Repair,Repair performed on window motor (corrective).,corrective,0,none,none,accept
+115,WO171492,2021-05-16,2021-05-21,PT2876,Brake System,Hydraulic Brake,Brake Disc,Replace,Replace performed on brake disc (corrective).,corrective,0,none,none,accept
+116,WO562926,2022-08-05,2022-08-10,ZG8827,Exhaust,Silencing,Muffler,Replace,Replace performed on muffler (corrective).,corrective,0,none,none,accept
+117,WO298940,2022-01-25,2022-01-30,CZ2646,HVAC,Cooling,Radiator,Diagnose,Diagnose performed on radiator (corrective).,corrective,0,none,none,accept
+118,WO104884,2022-12-22,2022-12-29,SL9548,Steering,Power Steering,Pump,Diagnose,Diagnose performed on pump (corrective).,corrective,0,none,none,accept
+119,WO598464,2021-04-02,2021-04-08,PT5636,Brake System,Air Brake,Brake Chamber,Replace,Replace performed on brake chamber (corrective).,corrective,0,none,none,accept
+120,WO921966,2021-03-23,2021-03-28,OU9689,Steering,Rack and Pinion,Steering Rack,Diagnose,Diagnose performed on steering rack (corrective).,corrective,0,none,none,accept
+121,WO630240,2021-05-13,2021-05-18,NC5889,HVAC,Cooling,Coolant Pump,Repair,Repair performed on coolant pump (corrective).,corrective,0,none,none,accept
+122,WO312990,2022-09-18,2022-09-24,YO8744,Powertrain,Transmission,Gearbox,Repair,Repair performed on gearbox (corrective).,corrective,0,none,none,accept
+123,WO924457,2021-12-20,2021-12-26,YA7232,HVAC,Heating,Heater Core,Diagnose,Diagnose performed on heater core (corrective).,corrective,0,none,none,accept
+124,WO104781,2021-03-12,2021-03-17,UQ3492,Body,Doors,Hinges,Repair,Repair performed on hinges (corrective).,corrective,0,none,none,accept
+125,WO516004,2021-07-16,2021-07-21,GX3546,Electrical System,Charging System,Alternator,Diagnose,Diagnose performed on alternator (corrective).,corrective,0,none,none,accept
+126,WO456885,2021-04-22,2021-04-27,PZ9666,HVAC,Cooling,Coolant Pump,Replace,Replace performed on coolant pump (corrective).,corrective,0,none,none,accept
+127,WO365784,2022-03-01,2022-03-08,XZ9751,HVAC,Cooling,Radiator,Replace,Replace performed on radiator (corrective).,corrective,0,none,none,accept
+128,WO688855,2021-11-07,2021-11-14,TI7745,Body,Doors,Hinges,Repair,Repair performed on hinges (corrective).,corrective,0,none,none,accept
+129,WO687031,2022-06-06,2022-06-12,GA5891,HVAC,Air Conditioning,Compressor,Diagnose,Diagnose performed on compressor (corrective).,corrective,0,none,none,accept
+130,WO136926,2021-07-15,2021-07-21,UK2084,Suspension,Rear Suspension,Leaf Spring,Replace,Replace performed on leaf spring (corrective).,corrective,0,none,none,accept
+131,WO485698,2022-12-15,2022-12-21,BJ1653,Steering,Rack and Pinion,Steering Rack,Diagnose,Diagnose performed on steering rack (corrective).,corrective,0,none,none,accept
+132,WO219916,2021-09-18,2021-09-22,PM5119,Body,Doors,Hinges,Replace,Replace performed on hinges (corrective).,corrective,0,none,none,accept
+133,WO585769,2021-08-08,2021-08-14,XN3236,Powertrain,Engine,Turbocharger,Replace,Replace performed on turbocharger (corrective).,corrective,0,none,none,accept
+134,WO258160,2021-05-17,2021-05-22,BV7381,Body,Windows,Window Motor,Replace,Replace performed on window motor (corrective).,corrective,0,none,none,accept
+135,WO198886,2021-03-04,2021-03-11,LE8777,Fuel System,Control and Monitoring,Flowmeter,Diagnose,Diagnose performed on flowmeter (corrective).,corrective,0,none,none,accept
+136,WO280152,2022-07-13,2022-07-20,JK1887,Powertrain,Engine,Turbocharger,Replace,Replace performed on turbocharger (corrective).,corrective,0,none,none,accept
+137,WO297343,2022-06-15,2022-06-20,CB2796,Fuel System,Delivery,Fuel Pump,Diagnose,Diagnose performed on fuel pump (corrective).,corrective,0,none,none,accept
+138,WO216374,2021-09-08,2021-09-13,JZ3266,Fuel System,Storage,Fuel Tank,Repair,Repair performed on fuel tank (corrective).,corrective,0,none,none,accept
+139,WO185566,2021-01-29,2021-02-03,GG4241,Powertrain,Engine,Cylinder Head,Repair,Repair performed on cylinder head (corrective).,corrective,0,none,none,accept
+140,WO128006,2022-12-30,2023-01-06,RD5920,Steering,Power Steering,Pump,Diagnose,Diagnose performed on pump (corrective).,corrective,0,none,none,accept
+141,WO416285,2022-08-08,2022-08-12,TI5808,HVAC,Cooling,Coolant Pump,Repair,Repair performed on coolant pump (corrective).,corrective,0,none,none,accept
+142,WO476917,2022-10-25,2022-11-01,LG5040,Powertrain,Engine,Turbocharger,Repair,Repair performed on turbocharger (corrective).,corrective,0,none,none,accept
+143,WO760767,2022-02-26,2022-03-05,XW2160,Powertrain,Driveline,Driveshaft,Replace,Replace performed on driveshaft (corrective).,corrective,0,none,none,accept
+144,WO190980,2022-10-06,2022-10-12,WL4470,Suspension,Front Suspension,Shock Absorber,Replace,Replace performed on shock absorber (corrective).,corrective,0,none,none,accept
+145,WO411053,2021-06-13,2021-06-17,KR8699,Body,Doors,Hinges,Replace,Replace performed on hinges (corrective).,corrective,0,none,none,accept
+146,WO317684,2022-04-06,2022-04-10,CT4457,Fuel System,Delivery,Fuel Pump,Replace,Replace performed on fuel pump (corrective).,corrective,0,none,none,accept
+147,WO453068,2021-12-13,2021-12-19,BK9890,Steering,Power Steering,Pump,Diagnose,Diagnose performed on pump (corrective).,corrective,0,none,none,accept
+148,WO243000,2021-05-20,2021-05-25,ER2040,Body,Doors,Hinges,Replace,Replace performed on hinges (corrective).,corrective,0,none,none,accept
+149,WO362843,2021-02-28,2021-03-05,HH6238,HVAC,Heating,Heater Core,Replace,Replace performed on heater core (corrective).,corrective,0,none,none,accept
