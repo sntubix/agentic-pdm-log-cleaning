@@ -24,6 +24,9 @@ dependencies = [
     "sqlalchemy>=2.0.41",
 ]
 
+[project.scripts]
+run-experiment = "agentic_pdm_data_cleaning.cli:main"
+
 [project.optional-dependencies]
 dev = [
     "mypy>=1.11",

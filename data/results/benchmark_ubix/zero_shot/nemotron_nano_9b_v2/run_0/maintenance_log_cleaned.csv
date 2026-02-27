@@ -5,7 +5,7 @@ id,work_order_number,start_date,end_date,license_plate,system,subsystem,componen
 179,WO886605,2022-11-29,2022-12-03,NL5295,Powertrain,Transmission,Clutch,Repair,Repair performed on clutch (corrective).,corrective,1,vehicle_not_in_fleet,generative,failed
 182,WO689881,2022-07-06,2022-07-12,QY6374,TelematicsSystem,TelematicsSubsystem,TelematicsComponent,Replace,Replace performed on air spring (corrective).,corrective,1,digital_system_test,generative,reject
 101,WO146883,2022-09-06,2022-09-10,YH7389,Powertrain,Driveline,,Replace,Replace performed on driveshaft (corrective).,corrective,1,missing_value,corruptive,failed
-62,WO734346,2022-09-28,2022-10-03,JX8397,ody,Windows,Window Motor,Diagnose,Diagnose performed on window motor (corrective).,corrective,1,categorical_typo,corruptive,failed
+62,WO734346,2022-09-28,2022-10-03,JX8397,ody,Windows,Window Motor,Diagnose,Diagnose performed on window motor (corrective).,corrective,1,categorical_typo,corruptive,accept
 42,WO506273,2022-02-17,2022-02-21,JF23D6C9001B17042,HVAC,Heating,Heater Core,Diagnose,Diagnose performed on heater core (corrective).,corrective,1,wrong_vehicle_id,corruptive,failed
 193,WO309519,2021-08-10,2021-08-17,Test,Fuel System,Storage,Fuel Tank,Diagnose,Diagnose performed on fuel tank (corrective).,corrective,1,digital_system_test,generative,failed
 47,WO887159,2021-07-07,2021-07-14,b606D,Steering,Rack and Pinion,Steering Rack,Diagnose,Diagnose performed on steering rack (corrective).,corrective,1,wrong_vehicle_id,corruptive,failed
