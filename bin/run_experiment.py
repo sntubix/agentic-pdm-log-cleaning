@@ -10,8 +10,14 @@ from agentic_pdm_data_cleaning.experiment.environment_generator import \
     EnvironmentDataGeneration
 from agentic_pdm_data_cleaning.utils.filesystem import FileSystem
 from agentic_pdm_data_cleaning.utils.utility import load_config
+from dotenv import load_dotenv
 
 if __name__ == "__main__":
+    
+    # Load environment variables
+    load_dotenv()
+    
+    # Parse 
     argparser = argparse.ArgumentParser(
         description="Set up experiment environment with synthetic data, database, preprocessing, and RAG index")
 

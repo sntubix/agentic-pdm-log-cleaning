@@ -1,7 +1,7 @@
 id,work_order_number,start_date,end_date,license_plate,system,subsystem,component,activity,work_description,work_order_type,corrupted_record,noise_label,noise_type,label
 73,WO619027,2022-06-03,2022-06-07,HR691,HVAC,Heating,Heater Core,Repair,Repair performed on heater core (corrective).,corrective,1,categorical_typo,corruptive,reject
 196,WO325145,2021-06-11,2021-06-16,,TelematicsSystem,TelematicsTestSubsystem,TelematicsTestComponent,Repair,Repair performed on muffler (corrective).,corrective,1,digital_system_test,generative,failed
-7,WO211498,2022-11-13,2022-11-17,BR4978,Fuel System,Control and Monitoring,Flowmeter,Repair,Repair performed on flowmeter (corrective).,corrective,0,none,none,failed
+7,WO211498,2022-11-13,2022-11-17,BR4978,Fuel System,Control and Monitoring,Flowmeter,Repair,Repair performed on flowmeter (corrective).,corrective,0,none,none,accept
 179,WO886605,2022-11-29,2022-12-03,NL5295,Powertrain,Transmission,Clutch,Repair,Repair performed on clutch (corrective).,corrective,1,vehicle_not_in_fleet,generative,failed
 182,WO689881,2022-07-06,2022-07-12,QY6374,TelematicsSystem,TelematicsSubsystem,TelematicsComponent,Replace,Replace performed on air spring (corrective).,corrective,1,digital_system_test,generative,failed
 101,WO146883,2022-09-06,2022-09-10,YH7389,Powertrain,Driveline,,Replace,Replace performed on driveshaft (corrective).,corrective,1,missing_value,corruptive,failed

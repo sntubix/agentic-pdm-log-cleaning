@@ -4,3 +4,18 @@
 2026-02-27 10:24:17,192 - benchmark_ubix_zero_shot - INFO - Running agent based on model {'model_name': 'nemotron-nano-9b-v2', 'organization': 'nvidia', 'full_model_identifier': 'nvidia/nemotron-nano-9b-v2', 'llm_config': {'provider': 'open_router', 'cost_in': 0.04, 'cost_out': 0.16, 'cost_unit': 1000000}} on record ID: WO619027
 2026-02-27 10:24:29,745 - benchmark_ubix_zero_shot - INFO - Processed 1 records for model nemotron-nano-9b-v2. The log cleaned by the agent is saved at data/results/benchmark_ubix/zero_shot/nemotron_nano_9b_v2/run_0/maintenance_log_cleaned.csv whereas the run report is saved to data/results/benchmark_ubix/zero_shot/nemotron_nano_9b_v2/run_0/run_info.jsonl
 2026-02-27 10:24:29,746 - benchmark_ubix_zero_shot - INFO - Finished experiment zero_shot of type zero_shot
+2026-02-27 10:53:58,706 - benchmark_ubix_zero_shot - INFO - Running experiment zero_shot of type zero_shot
+2026-02-27 10:53:58,706 - benchmark_ubix_zero_shot - INFO - Experiment name: zero_shot
+2026-02-27 10:53:58,709 - benchmark_ubix_zero_shot - INFO - Running experiment zero_shot with model nemotron-nano-9b-v2
+2026-02-27 10:53:58,710 - benchmark_ubix_zero_shot - ERROR - Exception occurred for record WO325145 on attempt 0: Set the `OPENROUTER_API_KEY` environment variable or pass it via `OpenRouterProvider(api_key=...)`to use the OpenRouter provider.
+2026-02-27 10:53:58,711 - benchmark_ubix_zero_shot - ERROR - Exception occurred for record WO325145 on attempt 1: Set the `OPENROUTER_API_KEY` environment variable or pass it via `OpenRouterProvider(api_key=...)`to use the OpenRouter provider.
+2026-02-27 10:53:58,712 - benchmark_ubix_zero_shot - ERROR - Exception occurred for record WO325145 on attempt 2: Set the `OPENROUTER_API_KEY` environment variable or pass it via `OpenRouterProvider(api_key=...)`to use the OpenRouter provider.
+2026-02-27 10:53:58,712 - benchmark_ubix_zero_shot - ERROR - All retries failed for record WO325145: Set the `OPENROUTER_API_KEY` environment variable or pass it via `OpenRouterProvider(api_key=...)`to use the OpenRouter provider.
+2026-02-27 10:53:58,715 - benchmark_ubix_zero_shot - INFO - Processed 1 records for model nemotron-nano-9b-v2. The log cleaned by the agent is saved at data/results/benchmark_ubix/zero_shot/nemotron_nano_9b_v2/run_0/maintenance_log_cleaned.csv whereas the run report is saved to data/results/benchmark_ubix/zero_shot/nemotron_nano_9b_v2/run_0/run_info.jsonl
+2026-02-27 10:53:58,715 - benchmark_ubix_zero_shot - INFO - Finished experiment zero_shot of type zero_shot
+2026-02-27 10:59:46,488 - benchmark_ubix_zero_shot - INFO - Running experiment zero_shot of type zero_shot
+2026-02-27 10:59:46,488 - benchmark_ubix_zero_shot - INFO - Experiment name: zero_shot
+2026-02-27 10:59:46,491 - benchmark_ubix_zero_shot - INFO - Running experiment zero_shot with model nemotron-nano-9b-v2
+2026-02-27 10:59:46,510 - benchmark_ubix_zero_shot - INFO - Running agent based on model {'model_name': 'nemotron-nano-9b-v2', 'organization': 'nvidia', 'full_model_identifier': 'nvidia/nemotron-nano-9b-v2', 'llm_config': {'provider': 'open_router', 'cost_in': 0.04, 'cost_out': 0.16, 'cost_unit': 1000000}} on record ID: WO211498
+2026-02-27 11:00:05,252 - benchmark_ubix_zero_shot - INFO - Processed 1 records for model nemotron-nano-9b-v2. The log cleaned by the agent is saved at data/results/benchmark_ubix/zero_shot/nemotron_nano_9b_v2/run_0/maintenance_log_cleaned.csv whereas the run report is saved to data/results/benchmark_ubix/zero_shot/nemotron_nano_9b_v2/run_0/run_info.jsonl
+2026-02-27 11:00:05,252 - benchmark_ubix_zero_shot - INFO - Finished experiment zero_shot of type zero_shot

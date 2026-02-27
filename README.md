@@ -54,29 +54,24 @@ uv pip install -e .
 ```
 
 Option B installs the package in editable mode so local code changes are immediately available without reinstalling.
-### 4) Configure your env variables
+### 4) Configure your environment
 
-Set your OpenRouter API key as an environment variable:
+Create a `.env` file in the project root with your API key and Python path:
 
 ```bash
+cat > .env << 'EOF'
 export OPENROUTER_API_KEY="your-openrouter-key-here"
-```
-
-Update `PYTHONPATH`
-
-```bash
 export PYTHONPATH=$PYTHONPATH:$(pwd)
+EOF
 ```
 
-Or save both to a `.env` file and source it:
+Then source it:
 
 ```bash
 source .env
 ```
 
-
 **Required:** Get your OpenRouter API key from [openrouter.ai](https://openrouter.ai).
-
 
 > Models are configured in `config/models/*.yaml`. Edit `full_model_identifier` or provider if you’re using local models or different endpoints.
 
