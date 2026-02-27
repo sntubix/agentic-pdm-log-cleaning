@@ -1,0 +1,35 @@
+.env
+.env.local
+.env.*.local
+!.env.example
+.env2
+
+# Python build artifacts
+*.egg-info/
+dist/
+build/
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Environments
+venv/
+.venv/
+.env/
+.env2
+
+# Project data
+data/
+logs/
+
+# Lock files (optional)
+uv.lock
+
+# Editors
+.vscode/
+.idea/
+
+# Personal files
+shortcuts.txt
