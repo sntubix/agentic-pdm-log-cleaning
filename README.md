@@ -2,7 +2,7 @@
 
 _Agentic, LLM‑powered cleaning of automotive maintenance logs — with synthetic data, controlled noise injection, and repeatable benchmarks._
 
-This repository provides a sandbox environment for AI agents focused on predictive maintenance. It supports generating synthetic automotive maintenance logs, injecting configurable noise, and benchmarking LLM agents that clean, repair, or reject log records using structured actions. The log schema is intentionally simplified for experimentation and reproducibility.
+This repository provides a sandbox environment for AI agents focused on predictive maintenance. It supports generating synthetic automotive maintenance logs, injecting configurable noise, and benchmarking LLM agents that clean, repair, or reject log records using structured actions.
 
 > TL;DR: Generate a synthetic fleet, corrupt the maintenance log with configurable noise (M1–M6), and evaluate multiple LLMs (OpenRouter / OpenAI) in a **stream-style, one‑record‑at‑a‑time** pipeline.
 
@@ -24,8 +24,34 @@ Key folders:
 
 ---
 
-## Quickstart (5 minutes)
-### 1) Install uv in your environment
+## Publication
+
+This repository is the reference implementation for the PHM Society Asia-Pacific Conference paper:
+
+**Cleaning Maintenance Logs with LLM Agents for Improved Predictive Maintenance**  
+Valeriu Ionut Dimidov, Faisal Hawlader, Sasan Jafarnejad, Raphaël Frank (PHM Society Asia-Pacific Conference, published Jan 13, 2026)  
+- DOI: https://doi.org/10.36001/phmap.2025.v5i1.4486  
+- PDF: https://papers.phmsociety.org/index.php/phmap/article/download/4486/phmap_25_4486  
+
+### Citation
+
+If you use this codebase (or the benchmark methodology / synthetic generator) in academic work, please cite:
+
+```bibtex
+@inproceedings{dimidov2026cleaning_maintenance_logs,
+  title        = {Cleaning Maintenance Logs with LLM Agents for Improved Predictive Maintenance},
+  author       = {Dimidov, Valeriu Ionut and Hawlader, Faisal and Jafarnejad, Sasan and Frank, Rapha{\"e}l},
+  booktitle    = {Proceedings of the Asia Pacific Conference of the PHM Society 2025},
+  year         = {2026},
+  doi          = {10.36001/phmap.2025.v5i1.4486},
+  url          = {https://doi.org/10.36001/phmap.2025.v5i1.4486}
+}
+```
+
+---
+
+## Quickstart
+### 1) Install uv
 
 ```bash
 pip install uv
@@ -61,18 +87,9 @@ OPENROUTER_API_KEY="your-openrouter-key-here"
 EOF
 ```
 
-The Python code loads `.env` at runtime.
-
 **Required:** Get your OpenRouter API key from [openrouter.ai](https://openrouter.ai).
 
 ### 5) Run the benchmark
-Preferred (installed CLI entry point):
-
-```bash
-run-experiment --benchmark_config_path config/benchmarks/benchmark_ubix.yaml
-```
-
-Alternative (no install needed, uses local `src` bootstrap):
 
 ```bash
 python bin/run_experiment.py --benchmark_config_path config/benchmarks/benchmark_ubix.yaml
