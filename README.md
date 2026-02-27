@@ -17,7 +17,7 @@ This repository provides a sandbox environment for AI agents focused on predicti
 - **Reproducible** → Deterministic seeds & structured outputs ready for analysis.
 
 Key folders:
-- `agentic_pdm_data_cleaning/` – source code (agents, generators, evaluation, utilities).
+- `src/agentic_pdm_data_cleaning/` – source code (agents, generators, evaluation, utilities).
 - `bin/` – entry scripts (e.g., `run_experiment.py`).
 - `config/` – app, model, fleet, benchmark, and hyper‑parameters YAMLs.
 - `resources/` – static assets (e.g., service catalog).
@@ -25,43 +25,57 @@ Key folders:
 ---
 
 ## Quickstart (5 minutes)
-
-### 1) Create a Python 3.12 virtual environment (recommended with `uv`)
+### 1) Install uv in your environment
 
 ```bash
-uv venv --python 3.12
-source .venv/bin/activate  
-uv pip install --upgrade pip
+pip install uv
 ```
 
-> If you don't have `uv` installed, use `pip install uv` or fall back to the standard Python venv commands.
-
-### 2) Ensure the Python path is set correctly
-
+### 2) Create a Python virtual environment
 ```bash
-export PYTHONPATH=$PYTHONPATH:$(pwd)
+uv venv --python 3.12 &&\
+source .venv/bin/activate   &&\
+uv pip install --upgrade pip
 ```
 
 ### 3) Install dependencies
 
 ```bash
-uv pip install -r requirements.txt
+uv pip install -e .
 ```
 
-> If you hit a missing import later, just `pip install <that-package>` — the codebase is modular and you can add dependencies incrementally.
+### 4) Configure your environment
 
-### 4) Set API keys (for model providers)
-The benchmark configs use OpenRouter/OpenAI identifiers. Set one of:
+Copy the template and then fill your local `.env` file with your API key:
+
 ```bash
-export OPENROUTER_API_KEY="sk-..."
-# or
-export OPENAI_API_KEY="sk-..."
+cp .env.example .env
 ```
-> Models are configured in `config/models/*.yaml`. Edit `full_model_identifier` or provider if you’re using local models or different endpoints.
+
+Then edit `.env`:
+
+```bash
+cat > .env << 'EOF'
+PYTHONPATH=$PYTHONPATH:$(pwd)
+OPENROUTER_API_KEY="your-openrouter-key-here"
+EOF
+```
+
+The Python code loads `.env` at runtime.
+
+**Required:** Get your OpenRouter API key from [openrouter.ai](https://openrouter.ai).
 
 ### 5) Run the benchmark
+Preferred (installed CLI entry point):
+
 ```bash
-python bin/run_experiment.py   --benchmark_config_path config/benchmarks/benchmark_ubix.yaml
+run-experiment --benchmark_config_path config/benchmarks/benchmark_ubix.yaml
+```
+
+Alternative (no install needed, uses local `src` bootstrap):
+
+```bash
+python bin/run_experiment.py --benchmark_config_path config/benchmarks/benchmark_ubix.yaml
 ```
 
 Flags (all optional, defaults shown above):
@@ -69,7 +83,8 @@ Flags (all optional, defaults shown above):
 - `--skip_data_generation`: reuse previously generated synthetic data.
 - `--skip_benchmark_execution`: only generate data, skip LLM runs.
 
-Outputs are written under `data/` and `logs/` (see `config/app_config.yaml`).
+> Models are configured in `config/models/*.yaml`. Edit `full_model_identifier` or provider if you’re using local models or different endpoints.
+> Outputs are written under `data/` and `logs/` (see `config/app_config.yaml`).
 
 ---
 

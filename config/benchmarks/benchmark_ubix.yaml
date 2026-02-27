@@ -1,6 +1,6 @@
 benchmark_id: benchmark_ubix
 fleet_id: 'fleet_ubix'
-models: ["nemotron-nano-9b-v2", "gpt-oss-20b", "gpt-oss-120b", "qwen3-next-80b-a3b-instruct", "kimi-k2-0905", "gpt-5"]
+models: ["nemotron-nano-9b-v2"]
 hyperparameters_space: 'space_1'
 enable_logfire: false
 runs: 1
