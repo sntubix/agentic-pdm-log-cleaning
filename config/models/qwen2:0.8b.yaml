@@ -1,0 +1,9 @@
+model_name: "qwen2:0.8b"
+organization: "alibaba"
+full_model_identifier: "qwen2:0.5b "
+llm_config:
+  provider: "open_ai"
+  base_url: "http://unsloth_vadi:11434/v1"
+  cost_in: 0.04
+  cost_out: 0.16
+  cost_unit: 1_000_000

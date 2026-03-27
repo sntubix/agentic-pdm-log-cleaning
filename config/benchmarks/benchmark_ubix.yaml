@@ -1,6 +1,6 @@
 benchmark_id: benchmark_ubix
 fleet_id: 'fleet_ubix'
-models: ["nemotron-nano-9b-v2"]
+models: ["qwen2:0.8b"]
 hyperparameters_space: 'space_1'
 enable_logfire: false
 runs: 1

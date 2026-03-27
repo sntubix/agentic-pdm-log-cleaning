@@ -3,6 +3,7 @@
 .env.*.local
 !.env.example
 .env2
+!.agents
 
 # Python build artifacts
 *.egg-info/

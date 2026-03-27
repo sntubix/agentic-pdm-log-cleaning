@@ -12,7 +12,7 @@ import yaml
 from dotenv import load_dotenv
 from pydantic_ai import (Agent, RunContext, UnexpectedModelBehavior,
                          UsageLimitExceeded, capture_run_messages)
-from pydantic_ai.usage import Usage, UsageLimits
+from pydantic_ai.usage import Usage, UsageLimits, RunUsage
 from sqlalchemy import create_engine
 
 from agentic_pdm_data_cleaning.domain import (EvaluationEntry, LLM_Answer,
@@ -403,7 +403,7 @@ class ExperimentRunner(ABC):
                     json_record = record.json_record if hasattr(
                         record, 'json_record') else record
                     logger.debug(f"Processing record: {json_record}")
-                    usage: Usage = Usage()
+                    usage: RunUsage = RunUsage()
                     start_time = time.perf_counter()
                     with capture_run_messages() as messages:
                         try:
